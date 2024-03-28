@@ -41,9 +41,9 @@ bunx --bun create-next-app@latest . --typescript --tailwind --eslint
 
 npx shadcn-ui@latest init
 
-
 ## for acternity-ui https://ui.aceternity.com/components
 bun add framer-motion clsx tawilwind-merge 
 
+bun add next-themes
 
 ```
