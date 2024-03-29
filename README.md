@@ -47,3 +47,10 @@ bun add framer-motion clsx tawilwind-merge
 bun add next-themes
 
 ```
+
+## Next.js New Feature
+```
+    "dev": "next dev --experimental-https",
+
+```
+it can allow your local dev has a https certificates
