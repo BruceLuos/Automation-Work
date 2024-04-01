@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 
-const font = Inter({ subsets: ["latin"] });
+// const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Auto-Work",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
