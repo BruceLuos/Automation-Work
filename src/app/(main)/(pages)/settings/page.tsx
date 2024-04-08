@@ -21,6 +21,7 @@ export default function Settings({}: Props) {
           onUpload={uploadProfileImage}
         />
         <ProfileForm user={user} onUpdate={updateUserInfo} /> */}
+        
       </div>
     </div>
   );
