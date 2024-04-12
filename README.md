@@ -54,3 +54,10 @@ bun add next-themes
 
 ```
 it can allow your local dev has a https certificates
+
+## Prisma
+```
+bun i -D prisma
+
+bunx prisma init
+```
