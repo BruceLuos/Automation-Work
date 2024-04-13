@@ -66,3 +66,13 @@ Next steps:
 2. Set the provider of the datasource block in schema.prisma to match your database: postgresql, mysql, sqlite, sqlserver, mongodb or cockroachdb.
 3. Run prisma db pull to turn your database schema into a Prisma schema.
 4. Run prisma generate to generate the Prisma Client. You can then start querying your database.
+
+更新线上数据库
+```
+bunx prisma db push
+```
+
+本地查看prsima 连接的数据库
+```
+bunx prisma studio
+```
