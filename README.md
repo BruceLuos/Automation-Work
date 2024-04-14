@@ -76,3 +76,7 @@ bunx prisma db push
 ```
 bunx prisma studio
 ```
+## Uploadcare to handle image upload
+```
+bun add @uploadcare/blocks --save-exact
+```
