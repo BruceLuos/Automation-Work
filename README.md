@@ -80,3 +80,36 @@ bunx prisma studio
 ```
 bun add @uploadcare/blocks --save-exact
 ```
+
+## Clerk.js authentication
+```
+bun add @clerk/nextjs
+
+```
+copy env
+https://dashboard.clerk.com/apps/app_2f5FDj2YzpVvYSPBkMMiBonqS8P/instances/ins_2f5FDjAGFjsoCPuHIDfmxNYuUqm
+
+ clerk google scopes settings
+ set google drive access
+
+https://www.googleapis.com/auth/userinfo.email
+https://www.googleapis.com/auth/userinfo.profile
+https://www.googleapis.com/auth/drive.activity.readonly
+https://www.googleapis.com/auth/drive.metadata
+https://www.googleapis.com/auth/drive.readonly
+
+## Google developer console
+get google app clientId and secret key and copy to clerk google auth setting
+set auth redirect link 
+set test user account
+https://console.cloud.google.com/apis/credentials/consent?project=auto-work-420308
+
+
+## use ngrok for clerk webhooks
+get the link from ngrok and copy to the clerk webhooks endpoint
+https://dashboard.clerk.com/apps/app_2f5FDj2YzpVvYSPBkMMiBonqS8P/instances/ins_2f5FDjAGFjsoCPuHIDfmxNYuUqm/webhooks
+
+if ngrok link change webhook endpoint need to change too
+```
+ngrok http https://localhost:3000
+```
