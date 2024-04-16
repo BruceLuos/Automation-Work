@@ -42,6 +42,7 @@ bunx --bun create-next-app@latest . --typescript --tailwind --eslint
 npx shadcn-ui@latest init
 
 ## for acternity-ui https://ui.aceternity.com/components
+
 bun add framer-motion clsx tawilwind-merge 
 
 bun add next-themes
@@ -50,8 +51,7 @@ bun add next-themes
 
 ## Next.js New Feature
 ```
-    "dev": "next dev --experimental-https",
-
+"dev": "next dev --experimental-https",
 ```
 it can allow your local dev has a https certificates
 
@@ -113,3 +113,5 @@ if ngrok link change webhook endpoint need to change too
 ```
 ngrok http https://localhost:3000
 ```
+## Code security 代码中提交了机密内容
+[解决方法](https://docs.github.com/zh/enterprise-server@3.11/code-security/secret-scanning/pushing-a-branch-blocked-by-push-protection)
