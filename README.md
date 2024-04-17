@@ -106,6 +106,7 @@ https://console.cloud.google.com/apis/credentials/consent?project=auto-work-4203
 
 
 ## use ngrok for clerk webhooks
+本地调试clerk webhooks需要注意将localhost:3000使用ngrok穿透,并配置好endpoint
 get the link from ngrok and copy to the clerk webhooks endpoint
 https://dashboard.clerk.com/apps/app_2f5FDj2YzpVvYSPBkMMiBonqS8P/instances/ins_2f5FDjAGFjsoCPuHIDfmxNYuUqm/webhooks
 
