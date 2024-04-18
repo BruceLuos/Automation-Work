@@ -89,7 +89,7 @@ bun add @clerk/nextjs
 copy env
 https://dashboard.clerk.com/apps/app_2f5FDj2YzpVvYSPBkMMiBonqS8P/instances/ins_2f5FDjAGFjsoCPuHIDfmxNYuUqm
 
- clerk google scopes settings
+ clerk google scopes settings  
  set google drive access
 
 https://www.googleapis.com/auth/userinfo.email
@@ -99,15 +99,15 @@ https://www.googleapis.com/auth/drive.metadata
 https://www.googleapis.com/auth/drive.readonly
 
 ## Google developer console
-get google app clientId and secret key and copy to clerk google auth setting
-set auth redirect link 
-set test user account
+get google app clientId and secret key and copy to clerk   google auth setting  
+set auth redirect link   
+set test user account 
 https://console.cloud.google.com/apis/credentials/consent?project=auto-work-420308
 
 
 ## use ngrok for clerk webhooks
-本地调试clerk webhooks需要注意将localhost:3000使用ngrok穿透,并配置好endpoint
-get the link from ngrok and copy to the clerk webhooks endpoint
+本地调试clerk webhooks需要注意将localhost:3000使用ngrok穿透,并配置好endpoint  
+get the link from ngrok and copy to the clerk webhooks endpoint  
 https://dashboard.clerk.com/apps/app_2f5FDj2YzpVvYSPBkMMiBonqS8P/instances/ins_2f5FDjAGFjsoCPuHIDfmxNYuUqm/webhooks
 
 if ngrok link change webhook endpoint need to change too
