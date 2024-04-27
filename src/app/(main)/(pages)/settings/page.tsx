@@ -11,6 +11,7 @@ const Settings = async (props: Props) => {
   if (!authUser) return null
 
   const user = await db.user.findUnique({ where: { clerkId: authUser.id } })
+  /** 删除个人头像 */
   const removeProfileImage = async () => {
     'use server'
     const response = await db.user.update({
@@ -24,6 +25,7 @@ const Settings = async (props: Props) => {
     return response
   }
 
+  /** 更新个人头像 */
   const uploadProfileImage = async (image: string) => {
     'use server'
     const id = authUser.id
@@ -39,6 +41,7 @@ const Settings = async (props: Props) => {
     return response
   }
 
+  /** 更新用户信息 */
   const updateUserInfo = async (name: string) => {
     'use server'
 
