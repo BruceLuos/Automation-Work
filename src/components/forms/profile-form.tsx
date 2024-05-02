@@ -38,6 +38,7 @@ const ProfileForm = ({ user, onUpdate }: Props) => {
     values: z.infer<typeof EditUserProfileSchema>
   ) => {
     setIsLoading(true)
+    // 更新名字
     await onUpdate(values.name)
     setIsLoading(false)
   }
