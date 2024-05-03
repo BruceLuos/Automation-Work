@@ -24,6 +24,7 @@ type Props = {
 
 /** 个人信息表单 */
 const ProfileForm = ({ user, onUpdate }: Props) => {
+  console.log('user',user)
   const [isLoading, setIsLoading] = useState(false)
   const form = useForm<z.infer<typeof EditUserProfileSchema>>({
     mode: 'onChange',
