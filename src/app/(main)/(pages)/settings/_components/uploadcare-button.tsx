@@ -29,11 +29,13 @@ const UploadCareButton = ({ onUpload }: Props) => {
     <div>
       <lr-config
         ctx-name="my-uploader"
-        pubkey="a9428ff5ff90ae7a64eb"
+        pubkey="a9428ff5ff90ae7a64eb" 
       />
 
       <lr-file-uploader-regular
         ctx-name="my-uploader"
+        // NEXT_PUBLIC_UPLOAD_CARE_CSS_SRC=https://cdn.jsdelivr.net/npm/@uploadcare/blocks@
+        // NEXT_PUBLIC_UPLOAD_CARE_SRC_PACKAGE=/web/lr-file-uploader-regular.min.css
         css-src={`https://cdn.jsdelivr.net/npm/@uploadcare/blocks@0.35.2/web/lr-file-uploader-regular.min.css`}
       />
 
